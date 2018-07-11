@@ -1,0 +1,21 @@
+.calculator{
+    height: 300px;
+    width: 235px;
+    border-radius: 5px; /*borda arredondada*/
+    overflow: hidden; /*evita-se que seu tamanho seja modificado ao conteúdo - http://www.criarweb.com/artigos/atributo-overflow-de-css.html*/
+    
+    /*Organização dos elementos fo flex-box em grids*/
+    display: grid;
+    grid-template-columns: repeat(4, 25%);/*grid dividida em 4 colunas de 25%*/
+    /*tamanho das linhas:
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+    linha 1 : display
+    linha 2 : ac..
+    linha 3 : 9..
+    linha 4 : 6..
+    linha 5 : 0 
+    grid-template-rows: 48px 48px 48px 48px 48px;    
+    Ao adicionarmos o display serão 6 linhas, por isso iclimos o fragment
+    */
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px;
+}

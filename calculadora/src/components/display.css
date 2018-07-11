@@ -1,0 +1,12 @@
+.display{
+    grid-column: span 4;/*numero de colunas para o display*/
+    background-color: #0004;/*cor do display, segue o gradient*/
+
+    /*tornando o component um flexbox de flex-items*/
+    display: flex;
+    justify-content: flex-end;/*flex-item alinhado ao lado direito*/
+    align-items: center;/*conteúdo centralizado*/
+    padding: 20px;/*para não ficar alinhado com a borda trazendo-o pra dentro o display*/
+    font-size: 2.1em;
+    overflow: hidden;/*o conteúdo digitado não irá influenciar no tamanho do elemento ou sair do content*/
+}

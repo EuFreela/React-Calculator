@@ -1,0 +1,27 @@
+@font-face{
+    font-family: 'Roboto-Medium';
+    src: url('./fonts/Roboto-Medium.ttf')
+}
+
+/*Seletor universal para ser aplicado em todo conteúdo da página index*/
+* {
+    /*caso a roboto não seja encontrad será a monospace*/
+    font-family: 'Roboto-Medium', monospace; 
+}
+
+body {
+    /*FlexBox para que o elemntos sejam filhos (flex-item): 
+    https://origamid.com/projetos/flexbox-guia-completo/*/
+    display: flex;
+    height: 100vh;/*altura dividida em cem partes, altura total da tela*/
+    /*Para alinhamento do container Flex-item (x)*/
+    justify-content: center;
+    /*Para alinhamento vertical do Flex-item (y)*/
+    align-items: center;
+    /*Para todo texto dentro deste container seja alinhado*/
+    text-align: center;
+    /*Cor da font*/
+    color: white;
+    /*Fundo comgradiente: https://uigradients.com/#Nepal*/
+    background: linear-gradient(to right, #dd5e89,#f7bb97);
+}

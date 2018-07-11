@@ -1,0 +1,38 @@
+/*Semelhante ao sass, criamos constantes para definiçõe no documento html
+https://www.w3schools.com/cssref/sel_root.asp*/
+:root{
+    --bg-button: #f0f0f0;
+    --border-button: solid 1px #888;
+}
+.button{
+    font-size: 1.4em;/*expressão 'em' proporcional a margin e padding à tela*/
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+}
+/*DINAMICA*/
+/*Quando o botão for presionado ou ativo*/
+/*Ao clicar nos botões eles passaram a ficr um pouco mais escuro a cada click*/
+.button.active{
+    background-color: #ccc;
+}
+/*Elementos de organização dos botões em colunas*/
+.button.treecolumn{
+    grid-column: span 3;/*passara a ter 2 colunas*/
+}
+.button.twocolumn{
+    grid-column: span 2;/*passara a ter 3 colunas*/
+}
+/*Elemento de operação.*/
+/*Irá ter cores dferentes*/
+.button.operation{
+    background-color: chocolate;
+    /*texto em branco*/
+    color: white;
+}
+/*Quando o botão operacao for clicado e ativo estará mais escuro*/
+.button.operation:active{
+    background-color: rgb(126, 56, 6);
+}
