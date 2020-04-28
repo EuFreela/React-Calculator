@@ -1,6 +1,6 @@
 # React-Calculator
 ##Conteúdo didático
-
+Todo o que se sabe vem de algum lugar. Esse conteúdo é de um curso que fiz. Como gosto de marcar, fico como exemplo.
 
 ### Sobre
 Esta é uma aplicação feita com ReactJs<br>
